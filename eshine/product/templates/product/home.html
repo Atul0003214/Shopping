@@ -42,7 +42,9 @@
       <hr class="mb-0" />
       <div class="card-body">
         <h5 class="card-title">{{ prod.product_name }}</h5>
-        <p class="card-text">&#8377;{{ prod.product_price }}</p>
+        <p class="card-text">MRP &#8377;{{ prod.product_price }} <br>
+          Sell Price &#8377;{{ prod.product_sell_price }}
+        </p>
         <div class="d-flex justify-content-evenly">
           <a
             href="{% url 'create_cart' prod.id %}"
